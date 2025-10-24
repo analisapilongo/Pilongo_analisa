@@ -46,6 +46,8 @@ body {
     float: left;
 }
 
+
+
 .navbar li {
     padding-inline: 10px;
 }
@@ -130,23 +132,96 @@ body {
 }
 
 
-/* --- RESPONSIVE STYLES --- */
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1115px) {
 
     .navbar {
 
         ul li a {
-            font-size: 40px;
-            
+            font-size: 35px;
             padding-left: 10px;
+            position: relative;
+            left: 60px;
         }
 
         #logo {
-            margin-top: -5px;
-            font-size: 40px;
-            margin-left: -70px;
-            padding-left: 100px;
+            
+            font-size: 35px;
+            margin-bottom: -2vh;
+            position: relative;
+            left: 20px;
+        }
+
+        #menu {
+            display: none;
+        }
+    }
+
+    .img-section-new {
+        grid-column: 1/11;
+        text-align: center;
+
+        img {
+            width: 190px;
+            height: auto;
+            border-radius: 50%;
+            
+        }
+    }
+
+    .text-section {
+        grid-column: 1/11;
+       
+
+        li:nth-child(1) {
+            font-size: 15px;
+            text-align: center;
+           
+        }
+
+        li:nth-child(2) {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        li:nth-child(3) {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        li:nth-child(4) {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        li:nth-child(5) {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .navbar {
+
+        ul li a {
+            font-size: 35px;
+            padding-left: 10px;
+            position: relative;
+            left: 60px;
+        }
+
+        #logo {
+            
+            font-size: 35px;
+            margin-bottom: -2vh;
+            position: relative;
+            left: vh;
+        }
+
+        #menu {
+            display: none;
         }
     }
 
@@ -201,6 +276,8 @@ body {
         ul li a {
             font-size: 35px;
             padding-left: 10px;
+            position: relative;
+            left: 60px;
         }
 
         #logo {
@@ -208,6 +285,7 @@ body {
             font-size: 35px;
             margin-bottom: -2vh;
         }
+
     }
 
     .img-section-new {
@@ -257,18 +335,26 @@ body {
 @media only screen and (max-width: 900px) {
 
     .navbar {
-        /* margin-left: 70px; */
-        padding-top: 0px;
+        
+        padding-top: 25px;
 
         ul li a {
-            font-size: 30px;
-            padding-left: 10px;
+            display: none;
         }
 
         #logo {
-            padding-left: 5px;
-            font-size: 30px;
-            margin-bottom: -2vh;
+            font-size: 40px;
+            /* margin-bottom: -2vh; */
+            position: relative;
+            left: 52vh;
+            top: -2vh;
+        }
+
+        #menu {
+            display: flex;
+            color: black;
+            position: relative;
+            top: -2vh;
         }
     }
 
@@ -330,9 +416,16 @@ body {
 
         #logo {
             text-align: center;
-            font-size: 20px;
+            font-size: 40px;
+            left: 40vh;
+            top: 0vh;
             
 
+        }
+
+        #menu {
+            display: flex;
+            top: 1vh;
         }
     }
 
@@ -383,7 +476,7 @@ body {
 @media only screen and (max-width: 700px) {
 
     .navbar {
-        padding: 20px;
+        padding: 25px;
         padding-top: 0px;
 
         ul li a {
@@ -393,9 +486,16 @@ body {
 
         #logo {
             padding-left: 0px;
-            font-size: 15px;
+            font-size: 40px;
+            left: 32vh;
+            top: 10px;
             
 
+        }
+
+        #menu {
+            display: flex;
+            color: black;
         }
     }
 
@@ -456,9 +556,15 @@ body {
 
         #logo {
             padding-left: 0px;
-            font-size: 20px;
+            font-size: 25px;
             padding-top: 10px;
+            left: 33vh;
+            top: -1vh;
 
+        }
+
+        #menu {
+            display: flex;
         }
     }
 
@@ -519,72 +625,15 @@ body {
 
         #logo {
             padding-left: 0px;
-            font-size: 10px;
+            font-size: 25px;
             padding-top: 10px;
+            top: -1vh;
+            left: 24vh;
 
         }
-    }
 
-    .img-section-new {
-        grid-column: 1/11;
-        text-align: center;
-
-        img {
-            width: 130px;
-            height: auto;
-            border-radius: 50%;
-            
-        }
-    }
-
-    .text-section {
-        grid-column: 1/11;
-       
-
-        li:nth-child(1) {
-            font-size: 10px;
-            text-align: center;
-           
-        }
-
-        li:nth-child(2) {
-            font-size: 10px;
-            text-align: center;
-        }
-
-        li:nth-child(3) {
-            font-size: 10px;
-            text-align: center;
-        }
-
-        li:nth-child(4) {
-            font-size: 10px;
-            text-align: center;
-        }
-
-        li:nth-child(5) {
-            font-size: 10px;
-            text-align: center;
-        }
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
-    .navbar {
-        padding: 0px;
-        
-
-        ul li a {
-            font-size: 8px;
-           
-        }
-
-        #logo {
-            padding-left: 0px;
-            font-size: 8px;
-            padding-top: 10px;
-
+        #menu {
+            display: flex;
         }
     }
 
@@ -645,15 +694,23 @@ body {
 
         #logo {
             padding-left: 0px;
-            font-size: 8px;
+            font-size: 20px;
             padding-top: 10px;
+            top: 5px;
+            left: 18vh;
 
         }
-    }
+
+        #menu {
+            display: flex;
+            position: relative;
+            top: 10px;
+                }
 
     .img-section-new {
         grid-column: 1/11;
         text-align: center;
+        }
 
         img {
             width: 100px;
@@ -708,12 +765,19 @@ body {
 
         #logo {
             margin-right: -5px;
-            font-size: 5px;
+            font-size: 25px;
             padding-top: 10px;
+            left:10vh;
 
         }
-    }
 
+         }
+
+         #menu {
+            display: flex;
+            position: relative;
+            top: 10px;
+         }
     .img-section-new {
         grid-column: 1/11;
         text-align: center;
