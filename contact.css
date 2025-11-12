@@ -7,6 +7,28 @@ body {
   overflow: hidden;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(270deg,
+    #3d1cd2,
+    #ffd76b,
+    #7afcff,
+    #7a8bff,
+    #e906e9
+  );
+  background-size: 1000% 1000%;
+  animation: mixColor 15s ease infinite;
+}
+
+
+@keyframes mixColor {
+  0%   { background-position: 0%   50%; }
+  25%  { background-position: 50%  100%; }
+  50%  { background-position: 100% 50%; }
+  75%  { background-position: 50%  0%; }
+  100% { background-position: 0%   50%; }
+}
 
 .grid-container {
   display: grid;
@@ -128,14 +150,14 @@ body {
 }
 
 .text-section li:nth-child(5) {
-  font-size: 30px;
+  font-size: 10px;
   margin-left: 1200px;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
-
+/* Footer */
 .footer {
   grid-column: 1 / 11;
   height: 10vh;
@@ -162,11 +184,11 @@ body {
         
 
         img {
-           
+            /* border-radius: 10px; */
             width: 200px;
             height: auto;
             object-fit: cover;
-            margin-top: 15px;
+            margin-top: 20px;
             border-radius: 50%;
             position: auto;
             text-align: center;
@@ -181,7 +203,7 @@ body {
 
         li:nth-child(1) {
             font-size: 40px;
-            margin-top: -5vh;
+            margin-top: -8vh;
             text-align: center;
             margin-left: 500px;
         }
@@ -190,17 +212,20 @@ body {
             font-size: 50px;
             text-align: center;
             margin-left: 500px;
+            margin-top: 2vh;
         }
 
         li:nth-child(3) {
             font-size: 25px;
             text-align: center;
+            margin-top: 2vh;
             margin-left: 500px;
         }
 
          li:nth-child(4) {
             font-size: 20px;
             text-align: center;
+            margin-top: -2vh;
             margin-left: 500px;
         }
 
@@ -405,7 +430,7 @@ body {
         
 
         img {
-           
+            /* border-radius: 10px; */
             width: 150px;
             height: auto;
             object-fit: cover;
@@ -479,7 +504,7 @@ body {
         
 
         img {
-            
+            /* border-radius: 10px; */
             width: 130px;
             height: auto;
             object-fit: cover;
@@ -520,7 +545,7 @@ body {
          li:nth-child(4) {
             font-size: 15px;
             text-align: center;
-            margin-top: 1vh;
+            margin-top: vh;
             margin-left: 500px;
         }
 
@@ -556,7 +581,7 @@ body {
         
 
         img {
-           
+            /* border-radius: 10px; */
             width: 130px;
             height: auto;
             object-fit: cover;
@@ -583,21 +608,21 @@ body {
             font-size: 25px;
             text-align: center;
             margin-left: 540px;
-            margin-top: 5px;
+            margin-top: 2vh;
         }
 
         li:nth-child(3) {
             font-size: 15px;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 2vh;
             margin-left: 540px;
         }
 
          li:nth-child(4) {
             font-size: 15px;
             text-align: center;
-            margin-top: 5px;
-            margin-left: 500px;
+            margin-top: -2vh;
+            margin-left: 540px;
         }
 
          li:nth-child(5) {
@@ -633,7 +658,7 @@ body {
         
 
         img {
-            
+            /* border-radius: 10px; */
             width: 110px;
             height: auto;
             object-fit: cover;
@@ -660,20 +685,20 @@ body {
             font-size: 20px;
             text-align: center;
             margin-left: 540px;
-            margin-top: 5px;
+            margin-top: 2vh;
         }
 
         li:nth-child(3) {
             font-size: 10px;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 2vh;
             margin-left: 540px;
         }
 
          li:nth-child(4) {
             font-size: 10px;
             text-align: center;
-            margin-top: 5px;
+            margin-top: -2vh;
             margin-left: 540px;
         }
 
@@ -709,7 +734,7 @@ body {
         
 
         img {
-           
+            /* border-radius: 10px; */
             width: 100px;
             height: auto;
             object-fit: cover;
@@ -747,8 +772,8 @@ body {
          li:nth-child(4) {
             font-size: 10px;
             text-align: center;
-            margin-top: 5px;
-            margin-left: 550px;
+            margin-top: -2vh;
+            margin-left: 540px;
         }
 
          li:nth-child(5) {
